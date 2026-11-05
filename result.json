@@ -1,0 +1,552 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\playwright.config.ts",
+    "rootDir": "C:/Users/Anusha/Desktop/Playwright Projects/PW 8PM Aug 2026_Project/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 7
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Anusha/Desktop/Playwright Projects/PW 8PM Aug 2026_Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Anusha/Desktop/Playwright Projects/PW 8PM Aug 2026_Project/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests",
+        "snapshotDir": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "https://sampleapp.tricentis.com/101/index.php#",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "result.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "result.xml"
+        }
+      ],
+      [
+        "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "resultDir": "allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "amazonele.spec.ts",
+      "file": "amazonele.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30063,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amazonele.spec.ts",
+                        "column": 57,
+                        "line": 5
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Electronics' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m'test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.in/'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Electronics'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Cameras & Photography'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Digitek DWM-116 Wireless'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#title'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Digitek DWM-116 Wireless Microphone with Type-C & Lightning, 2.4GHz Mic with Noise Cancellation, 40m Range, 6H Battery, Magnetic Clip, Wireless Mic for YouTube, Vlogging & Recording'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amazonele.spec.ts:5:57\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T14:46:12.872Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\test-results\\amazonele-test-chromium\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "38e02a578b2397934beb-115d29f80fe762399a5d",
+          "file": "amazonele.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "amazonsearch.spec.ts",
+      "file": "amazonsearch.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10520,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Select the department you')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByLabel('Select the department you') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Select the department you')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Select the department you')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByLabel('Select the department you') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Select the department you')\u001b[22m\n\n    at C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amazonsearch.spec.ts:6:62",
+                    "location": {
+                      "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amazonsearch.spec.ts",
+                      "column": 62,
+                      "line": 6
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.in/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 5 |\u001b[39m   \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Select the department you'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'searchbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Search Amazon.in'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Go'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Select the department you'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'All Categories Alexa Skills Amazon Devices Amazon Fashion Amazon Fresh Amazon Fresh Meat Amazon Pharmacy Appliances Apps & Games Audible Audiobooks Baby Beauty Books Car & Motorbike Clothing & Accessories Collectibles Computers & Accessories Deals Electronics Furniture Garden & Outdoors Gift Cards Grocery & Gourmet Foods Health & Personal Care Home & Kitchen Industrial & Scientific Jewellery Kindle Store Luggage & Bags Luxury Beauty Movies & TV Shows MP3 Music Music Musical Instruments Office Products Pet Supplies Prime Video Shoes & Handbags Software Sports, Fitness & Outdoors Subscribe & Save Tools & Home Improvement Toys & Games Under ₹500 Video Games Watches'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amazonsearch.spec.ts",
+                        "column": 62,
+                        "line": 6
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Select the department you')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByLabel('Select the department you') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Select the department you')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.in/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 5 |\u001b[39m   \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Select the department you'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'searchbox'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Search Amazon.in'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Go'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Select the department you'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'All Categories Alexa Skills Amazon Devices Amazon Fashion Amazon Fresh Amazon Fresh Meat Amazon Pharmacy Appliances Apps & Games Audible Audiobooks Baby Beauty Books Car & Motorbike Clothing & Accessories Collectibles Computers & Accessories Deals Electronics Furniture Garden & Outdoors Gift Cards Grocery & Gourmet Foods Health & Personal Care Home & Kitchen Industrial & Scientific Jewellery Kindle Store Luggage & Bags Luxury Beauty Movies & TV Shows MP3 Music Music Musical Instruments Office Products Pet Supplies Prime Video Shoes & Handbags Software Sports, Fitness & Outdoors Subscribe & Save Tools & Home Improvement Toys & Games Under ₹500 Video Games Watches'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amazonsearch.spec.ts:6:62\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T14:46:12.862Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\test-results\\amazonsearch-test-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amazonsearch.spec.ts",
+                    "column": 62,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2c9285763391f997e396-6ab6239b5fc7bf25f5a2",
+          "file": "amazonsearch.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "amzTodaysDeals.spec.ts",
+      "file": "amzTodaysDeals.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 10531,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: 'Primary' }).getByRole('list')\nExpected substring: \u001b[32m\"Today's Deals\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('navigation', { name: 'Primary' }).getByRole('list') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Primary' }).getByRole('list')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: 'Primary' }).getByRole('list')\nExpected substring: \u001b[32m\"Today's Deals\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('navigation', { name: 'Primary' }).getByRole('list') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Primary' }).getByRole('list')\u001b[22m\n\n    at C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amzTodaysDeals.spec.ts:5:85",
+                    "location": {
+                      "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amzTodaysDeals.spec.ts",
+                      "column": 85,
+                      "line": 5
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m'test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.in/'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'navigation'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Primary'\u001b[39m })\u001b[33m.\u001b[39mgetByRole(\u001b[32m'list'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Today\\'s Deals'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Today\\'s Deals'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.a-icon.a-icon-radio'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'span:nth-child(4) > .a-checkbox > label > .a-icon'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amzTodaysDeals.spec.ts",
+                        "column": 85,
+                        "line": 5
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: 'Primary' }).getByRole('list')\nExpected substring: \u001b[32m\"Today's Deals\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('navigation', { name: 'Primary' }).getByRole('list') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Primary' }).getByRole('list')\u001b[22m\n\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test(\u001b[32m'test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.in/'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'navigation'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Primary'\u001b[39m })\u001b[33m.\u001b[39mgetByRole(\u001b[32m'list'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Today\\'s Deals'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Today\\'s Deals'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.a-icon.a-icon-radio'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'span:nth-child(4) > .a-checkbox > label > .a-icon'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amzTodaysDeals.spec.ts:5:85\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T14:46:12.913Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\test-results\\amzTodaysDeals-test-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\amzTodaysDeals.spec.ts",
+                    "column": 85,
+                    "line": 5
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "33f4c5c5093ba404610c-5f4da03702c06ef346de",
+          "file": "amzTodaysDeals.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "automboileE2E.spec.ts",
+      "file": "automboileE2E.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "click on automobile",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "timedOut",
+                  "duration": 30122,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\src\\pages\\SendQuote.ts",
+                        "column": 25,
+                        "line": 33
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#password')\u001b[22m\n\u001b[2m    - locator resolved to <input id=\"password\" name=\"Password\" type=\"password\"/>\u001b[22m\n\u001b[2m    - fill(\"Anush123AA\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\SendQuote.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m\u001b[33mPhone\u001b[39m\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m\u001b[33mUsername\u001b[39m\u001b[33m.\u001b[39mfill(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mQUOTE_USERNAME\u001b[39m\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m\u001b[33mPassword\u001b[39m\u001b[33m.\u001b[39mfill(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mQUOTE_PASSWORD\u001b[39m\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m\u001b[33mConfirmPassword\u001b[39m\u001b[33m.\u001b[39mfill(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mQUOTE_PASSWORD\u001b[39m\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m\u001b[33mComments\u001b[39m\u001b[33m.\u001b[39mfill(data\u001b[33m.\u001b[39mcomments)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m }\u001b[0m\n\u001b[2m    at SendQuoteClass.SendQuote (C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\src\\pages\\SendQuote.ts:33:25)\u001b[22m\n\u001b[2m    at C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\tests\\automboileE2E.spec.ts:68:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Silver plan - Male - VW'\u001b[39m,\n  make: \u001b[32m'Volvo'\u001b[39m,\n  enginePerformance: \u001b[32m'110'\u001b[39m,\n  dateOfManufacture: \u001b[32m'06/12/2018'\u001b[39m,\n  numberOfSeats: \u001b[32m'5'\u001b[39m,\n  fuelType: \u001b[32m'Petrol'\u001b[39m,\n  listPrice: \u001b[32m'30000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS09AB1234'\u001b[39m,\n  annualMileage: \u001b[32m'12000'\u001b[39m,\n  Payload: \u001b[33m400\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Ravi'\u001b[39m,\n  lastName: \u001b[32m'Kumar'\u001b[39m,\n  dateOfBirth: \u001b[32m'05/10/1990'\u001b[39m,\n  gender: \u001b[32m'Male'\u001b[39m,\n  streetAddress: \u001b[32m'MG Road'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500081'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Speeding'\u001b[39m,\n  website: \u001b[32m'http://example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'3000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 1'\u001b[39m,\n  damageInsurance: \u001b[32m'No Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Silver'\u001b[39m,\n  email: \u001b[32m'ravi.kumar@example.com'\u001b[39m,\n  phone: \u001b[32m'9876543210'\u001b[39m,\n  username: \u001b[32m'ravikumar90'\u001b[39m,\n  password: \u001b[32m'Passw0rd!'\u001b[39m,\n  confirmPassword: \u001b[32m'Passw0rd!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Gold plan - Female - Audi'\u001b[39m,\n  make: \u001b[32m'Audi'\u001b[39m,\n  enginePerformance: \u001b[32m'150'\u001b[39m,\n  dateOfManufacture: \u001b[32m'03/22/2020'\u001b[39m,\n  numberOfSeats: \u001b[32m'4'\u001b[39m,\n  fuelType: \u001b[32m'Diesel'\u001b[39m,\n  listPrice: \u001b[32m'45000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS10CD5678'\u001b[39m,\n  annualMileage: \u001b[32m'8000'\u001b[39m,\n  Payload: \u001b[33m500\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Priya'\u001b[39m,\n  lastName: \u001b[32m'Sharma'\u001b[39m,\n  dateOfBirth: \u001b[32m'11/15/1992'\u001b[39m,\n  gender: \u001b[32m'Female'\u001b[39m,\n  streetAddress: \u001b[32m'Banjara Hills'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500034'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Skydiving'\u001b[39m,\n  website: \u001b[32m'http://priya.example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'5000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 2'\u001b[39m,\n  damageInsurance: \u001b[32m'Partial Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection,Legal Defense Insurance'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Gold'\u001b[39m,\n  email: \u001b[32m'priya.sharma@example.com'\u001b[39m,\n  phone: \u001b[32m'9988776655'\u001b[39m,\n  username: \u001b[32m'priyasharma92'\u001b[39m,\n  password: \u001b[32m'Secret123!'\u001b[39m,\n  confirmPassword: \u001b[32m'Secret123!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case 2'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Silver plan - Male - VW'\u001b[39m,\n  make: \u001b[32m'Volvo'\u001b[39m,\n  enginePerformance: \u001b[32m'110'\u001b[39m,\n  dateOfManufacture: \u001b[32m'06/12/2018'\u001b[39m,\n  numberOfSeats: \u001b[32m'5'\u001b[39m,\n  fuelType: \u001b[32m'Petrol'\u001b[39m,\n  listPrice: \u001b[32m'30000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS09AB1234'\u001b[39m,\n  annualMileage: \u001b[32m'12000'\u001b[39m,\n  Payload: \u001b[33m400\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Ravi'\u001b[39m,\n  lastName: \u001b[32m'Kumar'\u001b[39m,\n  dateOfBirth: \u001b[32m'05/10/1990'\u001b[39m,\n  gender: \u001b[32m'Male'\u001b[39m,\n  streetAddress: \u001b[32m'MG Road'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500081'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Speeding'\u001b[39m,\n  website: \u001b[32m'http://example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'3000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 1'\u001b[39m,\n  damageInsurance: \u001b[32m'No Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Silver'\u001b[39m,\n  email: \u001b[32m'ravi.kumar@example.com'\u001b[39m,\n  phone: \u001b[32m'9876543210'\u001b[39m,\n  username: \u001b[32m'ravikumar90'\u001b[39m,\n  password: \u001b[32m'Passw0rd!'\u001b[39m,\n  confirmPassword: \u001b[32m'Passw0rd!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Gold plan - Female - Audi'\u001b[39m,\n  make: \u001b[32m'Audi'\u001b[39m,\n  enginePerformance: \u001b[32m'150'\u001b[39m,\n  dateOfManufacture: \u001b[32m'03/22/2020'\u001b[39m,\n  numberOfSeats: \u001b[32m'4'\u001b[39m,\n  fuelType: \u001b[32m'Diesel'\u001b[39m,\n  listPrice: \u001b[32m'45000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS10CD5678'\u001b[39m,\n  annualMileage: \u001b[32m'8000'\u001b[39m,\n  Payload: \u001b[33m500\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Priya'\u001b[39m,\n  lastName: \u001b[32m'Sharma'\u001b[39m,\n  dateOfBirth: \u001b[32m'11/15/1992'\u001b[39m,\n  gender: \u001b[32m'Female'\u001b[39m,\n  streetAddress: \u001b[32m'Banjara Hills'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500034'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Skydiving'\u001b[39m,\n  website: \u001b[32m'http://priya.example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'5000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 2'\u001b[39m,\n  damageInsurance: \u001b[32m'Partial Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection,Legal Defense Insurance'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Gold'\u001b[39m,\n  email: \u001b[32m'priya.sharma@example.com'\u001b[39m,\n  phone: \u001b[32m'9988776655'\u001b[39m,\n  username: \u001b[32m'priyasharma92'\u001b[39m,\n  password: \u001b[32m'Secret123!'\u001b[39m,\n  confirmPassword: \u001b[32m'Secret123!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case 2'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Silver plan - Male - VW'\u001b[39m,\n  make: \u001b[32m'Volvo'\u001b[39m,\n  enginePerformance: \u001b[32m'110'\u001b[39m,\n  dateOfManufacture: \u001b[32m'06/12/2018'\u001b[39m,\n  numberOfSeats: \u001b[32m'5'\u001b[39m,\n  fuelType: \u001b[32m'Petrol'\u001b[39m,\n  listPrice: \u001b[32m'30000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS09AB1234'\u001b[39m,\n  annualMileage: \u001b[32m'12000'\u001b[39m,\n  Payload: \u001b[33m400\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Ravi'\u001b[39m,\n  lastName: \u001b[32m'Kumar'\u001b[39m,\n  dateOfBirth: \u001b[32m'05/10/1990'\u001b[39m,\n  gender: \u001b[32m'Male'\u001b[39m,\n  streetAddress: \u001b[32m'MG Road'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500081'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Speeding'\u001b[39m,\n  website: \u001b[32m'http://example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'3000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 1'\u001b[39m,\n  damageInsurance: \u001b[32m'No Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Silver'\u001b[39m,\n  email: \u001b[32m'ravi.kumar@example.com'\u001b[39m,\n  phone: \u001b[32m'9876543210'\u001b[39m,\n  username: \u001b[32m'ravikumar90'\u001b[39m,\n  password: \u001b[32m'Passw0rd!'\u001b[39m,\n  confirmPassword: \u001b[32m'Passw0rd!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Gold plan - Female - Audi'\u001b[39m,\n  make: \u001b[32m'Audi'\u001b[39m,\n  enginePerformance: \u001b[32m'150'\u001b[39m,\n  dateOfManufacture: \u001b[32m'03/22/2020'\u001b[39m,\n  numberOfSeats: \u001b[32m'4'\u001b[39m,\n  fuelType: \u001b[32m'Diesel'\u001b[39m,\n  listPrice: \u001b[32m'45000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS10CD5678'\u001b[39m,\n  annualMileage: \u001b[32m'8000'\u001b[39m,\n  Payload: \u001b[33m500\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Priya'\u001b[39m,\n  lastName: \u001b[32m'Sharma'\u001b[39m,\n  dateOfBirth: \u001b[32m'11/15/1992'\u001b[39m,\n  gender: \u001b[32m'Female'\u001b[39m,\n  streetAddress: \u001b[32m'Banjara Hills'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500034'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Skydiving'\u001b[39m,\n  website: \u001b[32m'http://priya.example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'5000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 2'\u001b[39m,\n  damageInsurance: \u001b[32m'Partial Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection,Legal Defense Insurance'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Gold'\u001b[39m,\n  email: \u001b[32m'priya.sharma@example.com'\u001b[39m,\n  phone: \u001b[32m'9988776655'\u001b[39m,\n  username: \u001b[32m'priyasharma92'\u001b[39m,\n  password: \u001b[32m'Secret123!'\u001b[39m,\n  confirmPassword: \u001b[32m'Secret123!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case 2'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Silver plan - Male - VW'\u001b[39m,\n  make: \u001b[32m'Volvo'\u001b[39m,\n  enginePerformance: \u001b[32m'110'\u001b[39m,\n  dateOfManufacture: \u001b[32m'06/12/2018'\u001b[39m,\n  numberOfSeats: \u001b[32m'5'\u001b[39m,\n  fuelType: \u001b[32m'Petrol'\u001b[39m,\n  listPrice: \u001b[32m'30000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS09AB1234'\u001b[39m,\n  annualMileage: \u001b[32m'12000'\u001b[39m,\n  Payload: \u001b[33m400\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Ravi'\u001b[39m,\n  lastName: \u001b[32m'Kumar'\u001b[39m,\n  dateOfBirth: \u001b[32m'05/10/1990'\u001b[39m,\n  gender: \u001b[32m'Male'\u001b[39m,\n  streetAddress: \u001b[32m'MG Road'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500081'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Speeding'\u001b[39m,\n  website: \u001b[32m'http://example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'3000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 1'\u001b[39m,\n  damageInsurance: \u001b[32m'No Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Silver'\u001b[39m,\n  email: \u001b[32m'ravi.kumar@example.com'\u001b[39m,\n  phone: \u001b[32m'9876543210'\u001b[39m,\n  username: \u001b[32m'ravikumar90'\u001b[39m,\n  password: \u001b[32m'Passw0rd!'\u001b[39m,\n  confirmPassword: \u001b[32m'Passw0rd!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Gold plan - Female - Audi'\u001b[39m,\n  make: \u001b[32m'Audi'\u001b[39m,\n  enginePerformance: \u001b[32m'150'\u001b[39m,\n  dateOfManufacture: \u001b[32m'03/22/2020'\u001b[39m,\n  numberOfSeats: \u001b[32m'4'\u001b[39m,\n  fuelType: \u001b[32m'Diesel'\u001b[39m,\n  listPrice: \u001b[32m'45000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS10CD5678'\u001b[39m,\n  annualMileage: \u001b[32m'8000'\u001b[39m,\n  Payload: \u001b[33m500\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Priya'\u001b[39m,\n  lastName: \u001b[32m'Sharma'\u001b[39m,\n  dateOfBirth: \u001b[32m'11/15/1992'\u001b[39m,\n  gender: \u001b[32m'Female'\u001b[39m,\n  streetAddress: \u001b[32m'Banjara Hills'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500034'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Skydiving'\u001b[39m,\n  website: \u001b[32m'http://priya.example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'5000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 2'\u001b[39m,\n  damageInsurance: \u001b[32m'Partial Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection,Legal Defense Insurance'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Gold'\u001b[39m,\n  email: \u001b[32m'priya.sharma@example.com'\u001b[39m,\n  phone: \u001b[32m'9988776655'\u001b[39m,\n  username: \u001b[32m'priyasharma92'\u001b[39m,\n  password: \u001b[32m'Secret123!'\u001b[39m,\n  confirmPassword: \u001b[32m'Secret123!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case 2'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Silver plan - Male - VW'\u001b[39m,\n  make: \u001b[32m'Volvo'\u001b[39m,\n  enginePerformance: \u001b[32m'110'\u001b[39m,\n  dateOfManufacture: \u001b[32m'06/12/2018'\u001b[39m,\n  numberOfSeats: \u001b[32m'5'\u001b[39m,\n  fuelType: \u001b[32m'Petrol'\u001b[39m,\n  listPrice: \u001b[32m'30000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS09AB1234'\u001b[39m,\n  annualMileage: \u001b[32m'12000'\u001b[39m,\n  Payload: \u001b[33m400\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Ravi'\u001b[39m,\n  lastName: \u001b[32m'Kumar'\u001b[39m,\n  dateOfBirth: \u001b[32m'05/10/1990'\u001b[39m,\n  gender: \u001b[32m'Male'\u001b[39m,\n  streetAddress: \u001b[32m'MG Road'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500081'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Speeding'\u001b[39m,\n  website: \u001b[32m'http://example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'3000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 1'\u001b[39m,\n  damageInsurance: \u001b[32m'No Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Silver'\u001b[39m,\n  email: \u001b[32m'ravi.kumar@example.com'\u001b[39m,\n  phone: \u001b[32m'9876543210'\u001b[39m,\n  username: \u001b[32m'ravikumar90'\u001b[39m,\n  password: \u001b[32m'Passw0rd!'\u001b[39m,\n  confirmPassword: \u001b[32m'Passw0rd!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "{\n  testCaseName: \u001b[32m'Gold plan - Female - Audi'\u001b[39m,\n  make: \u001b[32m'Audi'\u001b[39m,\n  enginePerformance: \u001b[32m'150'\u001b[39m,\n  dateOfManufacture: \u001b[32m'03/22/2020'\u001b[39m,\n  numberOfSeats: \u001b[32m'4'\u001b[39m,\n  fuelType: \u001b[32m'Diesel'\u001b[39m,\n  listPrice: \u001b[32m'45000'\u001b[39m,\n  licensePlateNumber: \u001b[32m'TS10CD5678'\u001b[39m,\n  annualMileage: \u001b[32m'8000'\u001b[39m,\n  Payload: \u001b[33m500\u001b[39m,\n  Totalweight: \u001b[33m3456\u001b[39m,\n  firstName: \u001b[32m'Priya'\u001b[39m,\n  lastName: \u001b[32m'Sharma'\u001b[39m,\n  dateOfBirth: \u001b[32m'11/15/1992'\u001b[39m,\n  gender: \u001b[32m'Female'\u001b[39m,\n  streetAddress: \u001b[32m'Banjara Hills'\u001b[39m,\n  country: \u001b[32m'India'\u001b[39m,\n  zipCode: \u001b[32m'500034'\u001b[39m,\n  city: \u001b[32m'Hyderabad'\u001b[39m,\n  occupation: \u001b[32m'Employee'\u001b[39m,\n  hobby: \u001b[32m'Skydiving'\u001b[39m,\n  website: \u001b[32m'http://priya.example.com'\u001b[39m,\n  startDate: \u001b[32m'12/31/2026'\u001b[39m,\n  insuranceSum: \u001b[32m'5000000'\u001b[39m,\n  meritRating: \u001b[32m'Bonus 2'\u001b[39m,\n  damageInsurance: \u001b[32m'Partial Coverage'\u001b[39m,\n  optionalProducts: \u001b[32m'Euro Protection,Legal Defense Insurance'\u001b[39m,\n  courtesyCar: \u001b[32m'Yes'\u001b[39m,\n  priceOption: \u001b[32m'Gold'\u001b[39m,\n  email: \u001b[32m'priya.sharma@example.com'\u001b[39m,\n  phone: \u001b[32m'9988776655'\u001b[39m,\n  username: \u001b[32m'priyasharma92'\u001b[39m,\n  password: \u001b[32m'Secret123!'\u001b[39m,\n  confirmPassword: \u001b[32m'Secret123!'\u001b[39m,\n  comments: \u001b[32m'Excel-driven test case 2'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T14:46:13.413Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Anusha\\Desktop\\Playwright Projects\\PW 8PM Aug 2026_Project\\test-results\\automboileE2E-click-on-automobile-chromium\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "46d7a2e2021a80bbd444-bc9b508764a8d0571eb6",
+          "file": "automboileE2E.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "E2E Flow Truck Insurance",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 17567,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T14:46:13.515Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "46d7a2e2021a80bbd444-d27fe46f24da99ecf81e",
+          "file": "automboileE2E.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 6189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T14:46:12.935Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 6664,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T14:46:12.942Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T14:46:10.863Z",
+    "duration": 36174.35,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

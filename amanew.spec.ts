@@ -1,0 +1,18 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.amazon.in/');
+  await page.getByRole('link', { name: '8PM deals live now Live now' }).click();
+  await page.getByRole('link', { name: 'Home & kitchen', exact: true }).click();
+  await page.goto('https://www.amazon.in/l/213911951031/?_encoding=UTF8&pd_rd_w=zevvZ&content-id=amzn1.sym.35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_p=35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_r=66E35AF7177VDFCNSEV7&pd_rd_wg=4g7Cu&pd_rd_r=ff7be8a4-36df-486c-b36b-9454c8552a94&promotionsSearchLastSeenAsin=B01M5B0TPW&promotionsSearchStartIndex=0&promotionsSearchPageSize=30');
+  await page.goto('https://www.amazon.in/l/213911951031/?_encoding=UTF8&pd_rd_w=zevvZ&content-id=amzn1.sym.35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_p=35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_r=66E35AF7177VDFCNSEV7&pd_rd_wg=4g7Cu&pd_rd_r=ff7be8a4-36df-486c-b36b-9454c8552a94&promotionsSearchLastSeenAsin=B0HGXYJBR7&promotionsSearchStartIndex=0&promotionsSearchPageSize=60');
+  await page.goto('https://www.amazon.in/l/213911951031/?_encoding=UTF8&pd_rd_w=zevvZ&content-id=amzn1.sym.35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_p=35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_r=66E35AF7177VDFCNSEV7&pd_rd_wg=4g7Cu&pd_rd_r=ff7be8a4-36df-486c-b36b-9454c8552a94&promotionsSearchLastSeenAsin=B08T65ZNDV&promotionsSearchStartIndex=0&promotionsSearchPageSize=60');
+  await page.goto('https://www.amazon.in/l/213911951031/?_encoding=UTF8&pd_rd_w=zevvZ&content-id=amzn1.sym.35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_p=35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_r=66E35AF7177VDFCNSEV7&pd_rd_wg=4g7Cu&pd_rd_r=ff7be8a4-36df-486c-b36b-9454c8552a94&promotionsSearchLastSeenAsin=B01A57IV58&promotionsSearchStartIndex=0&promotionsSearchPageSize=60');
+  await page.goto('https://www.amazon.in/l/213911951031/?_encoding=UTF8&pd_rd_w=zevvZ&content-id=amzn1.sym.35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_p=35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_r=66E35AF7177VDFCNSEV7&pd_rd_wg=4g7Cu&pd_rd_r=ff7be8a4-36df-486c-b36b-9454c8552a94&promotionsSearchLastSeenAsin=B08T65ZNDV&promotionsSearchStartIndex=0&promotionsSearchPageSize=60');
+  await page.locator('span:nth-child(2) > .a-checkbox > label > .a-icon').click();
+  await page.getByRole('checkbox', { name: 'Wakefit' }).check();
+  await page.goto('https://www.amazon.in/l/213911951031/?_encoding=UTF8&pd_rd_w=zevvZ&content-id=amzn1.sym.35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_p=35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_r=66E35AF7177VDFCNSEV7&pd_rd_wg=4g7Cu&pd_rd_r=ff7be8a4-36df-486c-b36b-9454c8552a94&promotionsSearchPageSize=60&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522brands%255C%2522%253A%255B%255C%2522129151%257CWakefit%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522');
+  await page.goto('https://www.amazon.in/l/213911951031/?_encoding=UTF8&pd_rd_w=zevvZ&content-id=amzn1.sym.35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_p=35660ae3-3508-4ef1-99c8-b26959d53271&pf_rd_r=66E35AF7177VDFCNSEV7&pd_rd_wg=4g7Cu&pd_rd_r=ff7be8a4-36df-486c-b36b-9454c8552a94&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522brands%255C%2522%253A%255B%255C%2522129151%257CWakefit%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522');
+  await page.getByRole('link', { name: 'Wakefit Memory Foam Wedge Pillow | Dual Layer HR & Memory Foam with Soft Velvet Cover | Helps Reduce Acid Reflux, Snoring & Back Discomfort | 1 Year Warranty | 18x11x17.5 Inch | Black', exact: true }).click();
+  await page.getByRole('button', { name: 'Add all 3 to Cart, Wakefit' }).click();
+});

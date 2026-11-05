@@ -1,0 +1,521 @@
+<testsuites id="" name="" tests="7" failures="2" skipped="0" errors="2" time="36.17435">
+<testsuite name="amazonele.spec.ts" timestamp="2026-11-05T14:46:11.401Z" hostname="chromium" tests="1" failures="0" skipped="0" time="30.063" errors="1">
+<testcase name="test" classname="amazonele.spec.ts" time="30.063">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\amazonele-test-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  [chromium] › amazonele.spec.ts:3:5 › test ────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'Electronics' })
+
+
+      3 | test('test', async ({ page }) => {
+      4 |   await page.goto('https://www.amazon.in/');
+    > 5 |   await page.getByRole('link', { name: 'Electronics' }).click();
+        |                                                         ^
+      6 |   await page.getByRole('link', { name: 'Cameras & Photography' }).click();
+      7 |   await page.getByRole('link', { name: 'Digitek DWM-116 Wireless' }).click();
+      8 |   await expect(page.locator('#title')).toContainText('Digitek DWM-116 Wireless Microphone with Type-C & Lightning, 2.4GHz Mic with Noise Cancellation, 40m Range, 6H Battery, Magnetic Clip, Wireless Mic for YouTube, Vlogging & Recording');
+        at C:\Users\Anusha\Desktop\Playwright Projects\PW 8PM Aug 2026_Project\tests\amazonele.spec.ts:5:57
+
+    Error Context: ..\test-results\amazonele-test-chromium\error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="amazonsearch.spec.ts" timestamp="2026-11-05T14:46:11.401Z" hostname="chromium" tests="1" failures="1" skipped="0" time="10.52" errors="0">
+<testcase name="test" classname="amazonsearch.spec.ts" time="10.52">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\amazonsearch-test-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [chromium] › amazonsearch.spec.ts:3:5 › test ─────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel('Select the department you')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel('Select the department you') with timeout 5000ms
+      - waiting for getByLabel('Select the department you')
+
+
+      4 |   await page.goto('https://www.amazon.in/');
+      5 |   
+    > 6 |   await expect(page.getByLabel('Select the department you')).toBeVisible();
+        |                                                              ^
+      7 |   await page.getByRole('searchbox', { name: 'Search Amazon.in' }).click();
+      8 |   await page.getByRole('button', { name: 'Go', exact: true }).click();
+      9 |   await expect(page.getByLabel('Select the department you')).toContainText('All Categories Alexa Skills Amazon Devices Amazon Fashion Amazon Fresh Amazon Fresh Meat Amazon Pharmacy Appliances Apps & Games Audible Audiobooks Baby Beauty Books Car & Motorbike Clothing & Accessories Collectibles Computers & Accessories Deals Electronics Furniture Garden & Outdoors Gift Cards Grocery & Gourmet Foods Health & Personal Care Home & Kitchen Industrial & Scientific Jewellery Kindle Store Luggage & Bags Luxury Beauty Movies & TV Shows MP3 Music Music Musical Instruments Office Products Pet Supplies Prime Video Shoes & Handbags Software Sports, Fitness & Outdoors Subscribe & Save Tools & Home Improvement Toys & Games Under ₹500 Video Games Watches');
+        at C:\Users\Anusha\Desktop\Playwright Projects\PW 8PM Aug 2026_Project\tests\amazonsearch.spec.ts:6:62
+
+    Error Context: ..\test-results\amazonsearch-test-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="amzTodaysDeals.spec.ts" timestamp="2026-11-05T14:46:11.401Z" hostname="chromium" tests="1" failures="1" skipped="0" time="10.531" errors="0">
+<testcase name="test" classname="amzTodaysDeals.spec.ts" time="10.531">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\amzTodaysDeals-test-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toContainText(expected) failed" type="expect.toContainText">
+<![CDATA[  [chromium] › amzTodaysDeals.spec.ts:3:5 › test ───────────────────────────────────────────────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('navigation', { name: 'Primary' }).getByRole('list')
+    Expected substring: "Today's Deals"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" getByRole('navigation', { name: 'Primary' }).getByRole('list') with timeout 5000ms
+      - waiting for getByRole('navigation', { name: 'Primary' }).getByRole('list')
+
+
+      3 | test('test', async ({ page }) => {
+      4 |   await page.goto('https://www.amazon.in/');
+    > 5 |   await expect(page.getByRole('navigation', { name: 'Primary' }).getByRole('list')).toContainText('Today\'s Deals');
+        |                                                                                     ^
+      6 |   await page.getByRole('link', { name: 'Today\'s Deals' }).click();
+      7 |   await expect(page.locator('.a-icon.a-icon-radio').first()).toBeVisible();
+      8 |   await page.locator('span:nth-child(4) > .a-checkbox > label > .a-icon').click();
+        at C:\Users\Anusha\Desktop\Playwright Projects\PW 8PM Aug 2026_Project\tests\amzTodaysDeals.spec.ts:5:85
+
+    Error Context: ..\test-results\amzTodaysDeals-test-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="automboileE2E.spec.ts" timestamp="2026-11-05T14:46:11.401Z" hostname="chromium" tests="2" failures="0" skipped="0" time="47.689" errors="1">
+<testcase name="click on automobile" classname="automboileE2E.spec.ts" time="30.122">
+<system-out>
+<![CDATA[{
+  testCaseName: [32m'Silver plan - Male - VW'[39m,
+  make: [32m'Volvo'[39m,
+  enginePerformance: [32m'110'[39m,
+  dateOfManufacture: [32m'06/12/2018'[39m,
+  numberOfSeats: [32m'5'[39m,
+  fuelType: [32m'Petrol'[39m,
+  listPrice: [32m'30000'[39m,
+  licensePlateNumber: [32m'TS09AB1234'[39m,
+  annualMileage: [32m'12000'[39m,
+  Payload: [33m400[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Ravi'[39m,
+  lastName: [32m'Kumar'[39m,
+  dateOfBirth: [32m'05/10/1990'[39m,
+  gender: [32m'Male'[39m,
+  streetAddress: [32m'MG Road'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500081'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Speeding'[39m,
+  website: [32m'http://example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'3000000'[39m,
+  meritRating: [32m'Bonus 1'[39m,
+  damageInsurance: [32m'No Coverage'[39m,
+  optionalProducts: [32m'Euro Protection'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Silver'[39m,
+  email: [32m'ravi.kumar@example.com'[39m,
+  phone: [32m'9876543210'[39m,
+  username: [32m'ravikumar90'[39m,
+  password: [32m'Passw0rd!'[39m,
+  confirmPassword: [32m'Passw0rd!'[39m,
+  comments: [32m'Excel-driven test case'[39m
+}
+{
+  testCaseName: [32m'Gold plan - Female - Audi'[39m,
+  make: [32m'Audi'[39m,
+  enginePerformance: [32m'150'[39m,
+  dateOfManufacture: [32m'03/22/2020'[39m,
+  numberOfSeats: [32m'4'[39m,
+  fuelType: [32m'Diesel'[39m,
+  listPrice: [32m'45000'[39m,
+  licensePlateNumber: [32m'TS10CD5678'[39m,
+  annualMileage: [32m'8000'[39m,
+  Payload: [33m500[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Priya'[39m,
+  lastName: [32m'Sharma'[39m,
+  dateOfBirth: [32m'11/15/1992'[39m,
+  gender: [32m'Female'[39m,
+  streetAddress: [32m'Banjara Hills'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500034'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Skydiving'[39m,
+  website: [32m'http://priya.example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'5000000'[39m,
+  meritRating: [32m'Bonus 2'[39m,
+  damageInsurance: [32m'Partial Coverage'[39m,
+  optionalProducts: [32m'Euro Protection,Legal Defense Insurance'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Gold'[39m,
+  email: [32m'priya.sharma@example.com'[39m,
+  phone: [32m'9988776655'[39m,
+  username: [32m'priyasharma92'[39m,
+  password: [32m'Secret123!'[39m,
+  confirmPassword: [32m'Secret123!'[39m,
+  comments: [32m'Excel-driven test case 2'[39m
+}
+{
+  testCaseName: [32m'Silver plan - Male - VW'[39m,
+  make: [32m'Volvo'[39m,
+  enginePerformance: [32m'110'[39m,
+  dateOfManufacture: [32m'06/12/2018'[39m,
+  numberOfSeats: [32m'5'[39m,
+  fuelType: [32m'Petrol'[39m,
+  listPrice: [32m'30000'[39m,
+  licensePlateNumber: [32m'TS09AB1234'[39m,
+  annualMileage: [32m'12000'[39m,
+  Payload: [33m400[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Ravi'[39m,
+  lastName: [32m'Kumar'[39m,
+  dateOfBirth: [32m'05/10/1990'[39m,
+  gender: [32m'Male'[39m,
+  streetAddress: [32m'MG Road'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500081'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Speeding'[39m,
+  website: [32m'http://example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'3000000'[39m,
+  meritRating: [32m'Bonus 1'[39m,
+  damageInsurance: [32m'No Coverage'[39m,
+  optionalProducts: [32m'Euro Protection'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Silver'[39m,
+  email: [32m'ravi.kumar@example.com'[39m,
+  phone: [32m'9876543210'[39m,
+  username: [32m'ravikumar90'[39m,
+  password: [32m'Passw0rd!'[39m,
+  confirmPassword: [32m'Passw0rd!'[39m,
+  comments: [32m'Excel-driven test case'[39m
+}
+{
+  testCaseName: [32m'Gold plan - Female - Audi'[39m,
+  make: [32m'Audi'[39m,
+  enginePerformance: [32m'150'[39m,
+  dateOfManufacture: [32m'03/22/2020'[39m,
+  numberOfSeats: [32m'4'[39m,
+  fuelType: [32m'Diesel'[39m,
+  listPrice: [32m'45000'[39m,
+  licensePlateNumber: [32m'TS10CD5678'[39m,
+  annualMileage: [32m'8000'[39m,
+  Payload: [33m500[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Priya'[39m,
+  lastName: [32m'Sharma'[39m,
+  dateOfBirth: [32m'11/15/1992'[39m,
+  gender: [32m'Female'[39m,
+  streetAddress: [32m'Banjara Hills'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500034'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Skydiving'[39m,
+  website: [32m'http://priya.example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'5000000'[39m,
+  meritRating: [32m'Bonus 2'[39m,
+  damageInsurance: [32m'Partial Coverage'[39m,
+  optionalProducts: [32m'Euro Protection,Legal Defense Insurance'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Gold'[39m,
+  email: [32m'priya.sharma@example.com'[39m,
+  phone: [32m'9988776655'[39m,
+  username: [32m'priyasharma92'[39m,
+  password: [32m'Secret123!'[39m,
+  confirmPassword: [32m'Secret123!'[39m,
+  comments: [32m'Excel-driven test case 2'[39m
+}
+{
+  testCaseName: [32m'Silver plan - Male - VW'[39m,
+  make: [32m'Volvo'[39m,
+  enginePerformance: [32m'110'[39m,
+  dateOfManufacture: [32m'06/12/2018'[39m,
+  numberOfSeats: [32m'5'[39m,
+  fuelType: [32m'Petrol'[39m,
+  listPrice: [32m'30000'[39m,
+  licensePlateNumber: [32m'TS09AB1234'[39m,
+  annualMileage: [32m'12000'[39m,
+  Payload: [33m400[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Ravi'[39m,
+  lastName: [32m'Kumar'[39m,
+  dateOfBirth: [32m'05/10/1990'[39m,
+  gender: [32m'Male'[39m,
+  streetAddress: [32m'MG Road'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500081'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Speeding'[39m,
+  website: [32m'http://example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'3000000'[39m,
+  meritRating: [32m'Bonus 1'[39m,
+  damageInsurance: [32m'No Coverage'[39m,
+  optionalProducts: [32m'Euro Protection'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Silver'[39m,
+  email: [32m'ravi.kumar@example.com'[39m,
+  phone: [32m'9876543210'[39m,
+  username: [32m'ravikumar90'[39m,
+  password: [32m'Passw0rd!'[39m,
+  confirmPassword: [32m'Passw0rd!'[39m,
+  comments: [32m'Excel-driven test case'[39m
+}
+{
+  testCaseName: [32m'Gold plan - Female - Audi'[39m,
+  make: [32m'Audi'[39m,
+  enginePerformance: [32m'150'[39m,
+  dateOfManufacture: [32m'03/22/2020'[39m,
+  numberOfSeats: [32m'4'[39m,
+  fuelType: [32m'Diesel'[39m,
+  listPrice: [32m'45000'[39m,
+  licensePlateNumber: [32m'TS10CD5678'[39m,
+  annualMileage: [32m'8000'[39m,
+  Payload: [33m500[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Priya'[39m,
+  lastName: [32m'Sharma'[39m,
+  dateOfBirth: [32m'11/15/1992'[39m,
+  gender: [32m'Female'[39m,
+  streetAddress: [32m'Banjara Hills'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500034'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Skydiving'[39m,
+  website: [32m'http://priya.example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'5000000'[39m,
+  meritRating: [32m'Bonus 2'[39m,
+  damageInsurance: [32m'Partial Coverage'[39m,
+  optionalProducts: [32m'Euro Protection,Legal Defense Insurance'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Gold'[39m,
+  email: [32m'priya.sharma@example.com'[39m,
+  phone: [32m'9988776655'[39m,
+  username: [32m'priyasharma92'[39m,
+  password: [32m'Secret123!'[39m,
+  confirmPassword: [32m'Secret123!'[39m,
+  comments: [32m'Excel-driven test case 2'[39m
+}
+{
+  testCaseName: [32m'Silver plan - Male - VW'[39m,
+  make: [32m'Volvo'[39m,
+  enginePerformance: [32m'110'[39m,
+  dateOfManufacture: [32m'06/12/2018'[39m,
+  numberOfSeats: [32m'5'[39m,
+  fuelType: [32m'Petrol'[39m,
+  listPrice: [32m'30000'[39m,
+  licensePlateNumber: [32m'TS09AB1234'[39m,
+  annualMileage: [32m'12000'[39m,
+  Payload: [33m400[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Ravi'[39m,
+  lastName: [32m'Kumar'[39m,
+  dateOfBirth: [32m'05/10/1990'[39m,
+  gender: [32m'Male'[39m,
+  streetAddress: [32m'MG Road'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500081'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Speeding'[39m,
+  website: [32m'http://example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'3000000'[39m,
+  meritRating: [32m'Bonus 1'[39m,
+  damageInsurance: [32m'No Coverage'[39m,
+  optionalProducts: [32m'Euro Protection'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Silver'[39m,
+  email: [32m'ravi.kumar@example.com'[39m,
+  phone: [32m'9876543210'[39m,
+  username: [32m'ravikumar90'[39m,
+  password: [32m'Passw0rd!'[39m,
+  confirmPassword: [32m'Passw0rd!'[39m,
+  comments: [32m'Excel-driven test case'[39m
+}
+{
+  testCaseName: [32m'Gold plan - Female - Audi'[39m,
+  make: [32m'Audi'[39m,
+  enginePerformance: [32m'150'[39m,
+  dateOfManufacture: [32m'03/22/2020'[39m,
+  numberOfSeats: [32m'4'[39m,
+  fuelType: [32m'Diesel'[39m,
+  listPrice: [32m'45000'[39m,
+  licensePlateNumber: [32m'TS10CD5678'[39m,
+  annualMileage: [32m'8000'[39m,
+  Payload: [33m500[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Priya'[39m,
+  lastName: [32m'Sharma'[39m,
+  dateOfBirth: [32m'11/15/1992'[39m,
+  gender: [32m'Female'[39m,
+  streetAddress: [32m'Banjara Hills'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500034'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Skydiving'[39m,
+  website: [32m'http://priya.example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'5000000'[39m,
+  meritRating: [32m'Bonus 2'[39m,
+  damageInsurance: [32m'Partial Coverage'[39m,
+  optionalProducts: [32m'Euro Protection,Legal Defense Insurance'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Gold'[39m,
+  email: [32m'priya.sharma@example.com'[39m,
+  phone: [32m'9988776655'[39m,
+  username: [32m'priyasharma92'[39m,
+  password: [32m'Secret123!'[39m,
+  confirmPassword: [32m'Secret123!'[39m,
+  comments: [32m'Excel-driven test case 2'[39m
+}
+{
+  testCaseName: [32m'Silver plan - Male - VW'[39m,
+  make: [32m'Volvo'[39m,
+  enginePerformance: [32m'110'[39m,
+  dateOfManufacture: [32m'06/12/2018'[39m,
+  numberOfSeats: [32m'5'[39m,
+  fuelType: [32m'Petrol'[39m,
+  listPrice: [32m'30000'[39m,
+  licensePlateNumber: [32m'TS09AB1234'[39m,
+  annualMileage: [32m'12000'[39m,
+  Payload: [33m400[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Ravi'[39m,
+  lastName: [32m'Kumar'[39m,
+  dateOfBirth: [32m'05/10/1990'[39m,
+  gender: [32m'Male'[39m,
+  streetAddress: [32m'MG Road'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500081'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Speeding'[39m,
+  website: [32m'http://example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'3000000'[39m,
+  meritRating: [32m'Bonus 1'[39m,
+  damageInsurance: [32m'No Coverage'[39m,
+  optionalProducts: [32m'Euro Protection'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Silver'[39m,
+  email: [32m'ravi.kumar@example.com'[39m,
+  phone: [32m'9876543210'[39m,
+  username: [32m'ravikumar90'[39m,
+  password: [32m'Passw0rd!'[39m,
+  confirmPassword: [32m'Passw0rd!'[39m,
+  comments: [32m'Excel-driven test case'[39m
+}
+{
+  testCaseName: [32m'Gold plan - Female - Audi'[39m,
+  make: [32m'Audi'[39m,
+  enginePerformance: [32m'150'[39m,
+  dateOfManufacture: [32m'03/22/2020'[39m,
+  numberOfSeats: [32m'4'[39m,
+  fuelType: [32m'Diesel'[39m,
+  listPrice: [32m'45000'[39m,
+  licensePlateNumber: [32m'TS10CD5678'[39m,
+  annualMileage: [32m'8000'[39m,
+  Payload: [33m500[39m,
+  Totalweight: [33m3456[39m,
+  firstName: [32m'Priya'[39m,
+  lastName: [32m'Sharma'[39m,
+  dateOfBirth: [32m'11/15/1992'[39m,
+  gender: [32m'Female'[39m,
+  streetAddress: [32m'Banjara Hills'[39m,
+  country: [32m'India'[39m,
+  zipCode: [32m'500034'[39m,
+  city: [32m'Hyderabad'[39m,
+  occupation: [32m'Employee'[39m,
+  hobby: [32m'Skydiving'[39m,
+  website: [32m'http://priya.example.com'[39m,
+  startDate: [32m'12/31/2026'[39m,
+  insuranceSum: [32m'5000000'[39m,
+  meritRating: [32m'Bonus 2'[39m,
+  damageInsurance: [32m'Partial Coverage'[39m,
+  optionalProducts: [32m'Euro Protection,Legal Defense Insurance'[39m,
+  courtesyCar: [32m'Yes'[39m,
+  priceOption: [32m'Gold'[39m,
+  email: [32m'priya.sharma@example.com'[39m,
+  phone: [32m'9988776655'[39m,
+  username: [32m'priyasharma92'[39m,
+  password: [32m'Secret123!'[39m,
+  confirmPassword: [32m'Secret123!'[39m,
+  comments: [32m'Excel-driven test case 2'[39m
+}
+
+[[ATTACHMENT|test-results\automboileE2E-click-on-automobile-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  [chromium] › automboileE2E.spec.ts:18:5 › click on automobile ────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#password')
+        - locator resolved to <input id="password" name="Password" type="password"/>
+        - fill("Anush123AA")
+      - attempting fill action
+        - waiting for element to be visible, enabled and editable
+
+
+       at ..\src\pages\SendQuote.ts:33
+
+      31 |     await this.Phone.fill(data.phone);
+      32 |     await this.Username.fill(process.env.QUOTE_USERNAME!);
+    > 33 |     await this.Password.fill(process.env.QUOTE_PASSWORD!);
+         |                         ^
+      34 |     await this.ConfirmPassword.fill(process.env.QUOTE_PASSWORD!);
+      35 |     await this.Comments.fill(data.comments);
+      36 | }
+        at SendQuoteClass.SendQuote (C:\Users\Anusha\Desktop\Playwright Projects\PW 8PM Aug 2026_Project\src\pages\SendQuote.ts:33:25)
+        at C:\Users\Anusha\Desktop\Playwright Projects\PW 8PM Aug 2026_Project\tests\automboileE2E.spec.ts:68:5
+
+    Error Context: ..\test-results\automboileE2E-click-on-automobile-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="E2E Flow Truck Insurance" classname="automboileE2E.spec.ts" time="17.567">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2026-11-05T14:46:11.401Z" hostname="chromium" tests="2" failures="0" skipped="0" time="12.853" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="6.189">
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="6.664">
+</testcase>
+</testsuite>
+</testsuites>
