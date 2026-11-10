@@ -1,0 +1,9 @@
+status 200
+Responce Body {
+  description: 'new Coffee Details in HYD',
+  id: 38,
+  name: 'BlackCoffeee'
+}
+Description new Coffee Details in HYD
+Dynamic ID 38
+name BlackCoffeee
